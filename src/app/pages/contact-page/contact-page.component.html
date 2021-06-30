@@ -1,0 +1,36 @@
+<p>contact-page works!</p>
+
+<div class = "d-flex align-items:center">
+    <form [formGroup] = "contactForm" (ngSubmit) = "submitted()">
+
+        <div>
+            <label for="name">Name</label>
+            <input id = "name" type="text" formControlName="name">
+            <span *ngIf = "isSubmitted && contactForm.controls.name.errors">
+                Is required</span>
+        </div>
+
+        <div>
+            <label for="apellidos">Apellidos</label>
+            <input id = "apellidos" type="text" formControlName="apellidos">
+        </div>
+
+        <div>
+            <label for="description">Description</label>
+            <textarea formControlName="description"></textarea>
+            <input type="submit" value="Send">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id = "email" type = "email" formControlName="email">
+        </div>
+
+        <div>
+            <label for="edad">Edad</label>
+            <input id = "edad" type = "number" formControlName="edad">
+        </div>
+
+     
+    </form>
+</div>

@@ -1,0 +1,15 @@
+.c-menu{
+
+    &__link{
+        text-decoration: none;
+        font-weight: 900;
+        color: greenyellow;
+        border: 2px solid black;
+        padding: 15px 20px;
+        text-transform: uppercase
+    
+        &--active{
+            background-color: violet;
+        }
+    }
+}
